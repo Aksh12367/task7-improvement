@@ -1,0 +1,182 @@
+:root{
+    --primary-blue: rgb(83, 83, 230);
+    --text-gray: gray;
+    --bg-light: white;
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+    line-height: 1.6;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav{
+    display: none; 
+}
+
+.herosection{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.herocontent h1{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.herocontent span{
+    color: var(--primary-blue);
+}
+.heroimage img{
+    width: 100%;
+    max-width: 250px;
+    margin-top: 30px;
+}
+.ctabutton{
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.userprofile{
+    background-color: lightblue;
+    border-radius: 15px;
+    padding: 10px;
+}
+.logo{
+    font-size: large;
+    font-weight: bold;
+}
+@media (min-width: 768px){
+    .navbar{
+        padding: 15px 50px;
+    }
+
+    .logo{
+        font-size: 1.1rem;
+    }
+
+    .userprofile{
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+
+    .nav{
+        display: flex;
+    }
+
+    .nav{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        font-size: 0.9rem;
+    }
+
+    .nav li{
+        cursor: pointer;
+        color: var(--text-gray);
+    }
+
+    .herosection{
+        padding: 50px;
+    }
+
+    .herocontent h1{
+        font-size: 2rem;
+    }
+
+    .heroimage img{
+        max-width: 300px;
+    }
+}
+@media (min-width: 1024px) {
+    .herosection{
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 10%;
+    }
+
+    .herocontent{
+        flex: 1;
+    }
+
+    .herocontent h1{
+        font-size: 3rem;
+    }
+
+    .heroimage{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .heroimage img{
+        max-width: 450px;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+    }
+
+    .nav{
+        gap: 30px;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) {
+    .nav{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    
+    .nav a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .herosection {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px 10%;
+    }
+
+    .herocontent{
+        flex: 1;
+    }
+
+    .herocontent h1{
+        font-size: 2.5rem;
+    }
+
+    .heroimage{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .heroimage img{
+        max-width: 350px;
+    }
+}
